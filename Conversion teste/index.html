@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.5" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="css/phone.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		// Animação scroll top
+		$(document).ready(function(){
+			$("#qsomos").click(function(){
+				topoHt = $("#topo").height() + 10;
+					$("html, body").animate({
+                	   scrollTop: $("#quemsomos").offset().top-topoHt 
+             		}, 500);
+			})
+			$("#serv").click(function(){
+				topoHt = $("#topo").height() + 10;
+					$("html, body").animate({
+                	   scrollTop: $("#servicos").offset().top-topoHt 
+             		}, 500);
+			})
+			$("#orc").click(function(){
+				topoHt = $("#topo").height() + 10;
+					$("html, body").animate({
+                	   scrollTop: $("#orcamento").offset().top-topoHt 
+             		}, 500);
+			})
+			$("#top").click(function(){
+				topoHt = $("#topo").height() + 10;
+					$("html, body").animate({
+                	   scrollTop: $("#bg-topo").offset().top-topoHt 
+             		}, 500);
+			})
+			$("#top-logo").click(function(){
+				topoHt = $("#topo").height() + 10;
+					$("html, body").animate({
+                	   scrollTop: $("#bg-topo").offset().top-topoHt 
+             		}, 500);
+			})
+			// Fim animação scroll top
+						
+			// Início animação do slider 
+			$("#seo").click(function(){
+    			$("#slide1").show(800);
+    			$("#slide2").hide(800);
+    			$("#slide3").hide(800);
+    			$("#seo").css("background-color", "#394954");
+    			$("#ecomm").css("background-color", "#fff");
+    			$("#cons").css("background-color", "#fff");
+			});
+			$("#ecomm").click(function(){
+    			$("#slide2").show(800);
+    			$("#slide1").hide(800);
+    			$("#slide3").hide(800);
+    			$("#seo").css("background-color", "#fff");
+    			$("#ecomm").css("background-color", "#394954");
+    			$("#cons").css("background-color", "#fff");
+
+			});
+			$("#cons").click(function(){
+    			$("#slide3").show(800);
+    			$("#slide1").hide(800);
+    			$("#slide2").hide(800);
+    			$("#seo").css("background-color", "#fff");
+    			$("#ecomm").css("background-color", "#fff");
+    			$("#cons").css("background-color", "#394954");
+			});
+			// Fim animação slider
+		})
+	</script>
+
+</head>
+<body>
+	<!--Cabeçalho-->
+	<header class="header-top" id="topo">
+		<div class="container">
+		<img src="imagens/conversion-logo.png" alt="Logo Conversion" width="240" height="40" />
+		<div class="busca">
+			<input type="text" id="btnBusca" placeholder="Pesquisar..." />
+			<a href="#"><p class="icons"></p></a>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li id="top"><a href="#">INÍCIO</a></li>				
+				<li id="qsomos"><a href="#">QUEM SOMOS</a></li>
+				<li id="serv"><a href="#">SERVIÇOS</a></li>
+				<li id="orc"><a href="#">ORÇAMENTO</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<!--fim cabeçalho-->
+					
+	<!--início background escolha de resultados-->
+	<section class="bg-escolha" id="bg-topo">
+		<div class="bg-text">
+			<div class="bg-text-align">
+				<h1>ESCOLHA PELOS RESULTADOS</h1>
+				</br>
+				<p>Faça SEO com quem mais entrega resultados para seus clientes</p>
+				</br>
+				<p><a href="#">CONSULTE</a><p>
+			</div>	
+		</div>
+	</section>
+	<!-- fim bg-escolha-->
+
+	<!--início quem somos-->
+	<section class="qsomos container" id="quemsomos">
+		<h2>Quem Somos</h2>
+		<img src="imagens/conversion-predio.jpg" alt="Prédio Conversion" width="181" height="226" />
+		<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+		</br>
+		</br>
+		<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+		</br>
+		</br>
+		<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+		<div class="article-respon">
+			<article class="col1">
+				<h3>Missão</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis blandit enim, vitae consectetur ante facilisis vel.</p>
+				</br>
+				<p><a href="#">Continue lendo</a></p>
+			</article>
+			<article class="col2">
+				<h3>Visão</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis blandit enim, vitae consectetur ante facilisis vel.</p>
+				</br>
+				<p><a href="#">Continue lendo</a></p>
+			</article>
+			<article class="col3">
+				<h3>Valores</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis blandit enim, vitae consectetur ante facilisis vel.</p>
+				</br>
+				<p><a href="#">Continue lendo</a></p>
+			</article>
+		</div>
+	</section>
+	<!--fim quem somos-->
+
+	<!--início serviços-->
+	<section class="servicos" id="servicos">
+		<div class="container cont-respon">
+			<h2>Serviços</h2>
+			<p class="servicosp">Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+		</div>
+		<!--início do menu para slider do bloco-->	
+		<div class="slider-menu container">
+			
+			<div class="seo-inst" id="seo">
+				<h3>SEO Institucional</h3>
+				</br>
+				<p>Posicione sua marca na internet</p>
+			</div>
+			<div class="e-comm" id="ecomm">
+				<h3>E-commerce SEO</h3>
+				</br>
+				<p>Lucre mais com sua loja virtual</p>
+			</div>
+			<div class="consult" id="cons">
+				<h3>Consultoria</h3>
+				</br>
+				<p>Otimize seu site para vender mais</p>
+			</div>
+			
+		</div>
+		<!-- fim do menu e início do slider-->
+		<div class="box-text">
+			<div class="container">
+				<div class="slide-1" id="slide1">
+					<h3>SEO Institucional</h3>
+					</br>
+					<h4>Posicione sua marca na internet</h4>
+					<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Donec imperdiet urna vitae justo convallis, vel convallis mi mattis. Nam congue vulputate justo nec bibendum. Aliquam erat volutpat. Suspendisse in vulputate magna, eu fringilla enim. Vestibulum lorem leo, finibus vel porta euismod, porttitor vitae sapien</p>
+					<button><a href="#orcamento">Solicite um Orçamento</a></button>
+				</div>
+				<div class="slide-2" id="slide2">
+					<h3>E-commerce SEO</h3>
+					</br>
+					<h4>Lucre mais com sua loja virtual</h4>
+					<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Donec imperdiet urna vitae justo convallis, vel convallis mi mattis. Nam congue vulputate justo nec bibendum. Aliquam erat volutpat. Suspendisse in vulputate magna, eu fringilla enim. Vestibulum lorem leo, finibus vel porta euismod, porttitor vitae sapien</p>
+					<button><a href="#orcamento">Solicite um Orçamento</a></button>
+				</div>
+				<div class="slide-3" id="slide3">
+					<h3>Consultoria</h3>
+					</br>
+					<h4>Otimize seu site para vender mais</h4>
+					<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Donec imperdiet urna vitae justo convallis, vel convallis mi mattis. Nam congue vulputate justo nec bibendum. Aliquam erat volutpat. Suspendisse in vulputate magna, eu fringilla enim. Vestibulum lorem leo, finibus vel porta euismod, porttitor vitae sapien</p>
+					<button><a href="#orcamento">Solicite um Orçamento</a></button>
+				</div>
+			</div>		
+		</div>
+		<!--fim slider-->
+	</section>
+	<!--Fim do Serviços-->
+
+	<!--Início orçamento-->
+	<section class="orcamento container" id="orcamento">
+		
+		<div class="orc-top">
+			<h2>Solicite um orçamento</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus aliquam dolor quis laoreet. Donec orci odio, elementum in eros ut.</p>
+						
+			<h3>Dados pessoais:</h3>
+			<!--formulário-->
+			<form method="#" action="post">
+				<div class="form-col1">
+					<div>
+						<label for="nome" class="required">Nome Completo</label></br>
+						<input type="text" name="nome" required/>
+					</div>
+					<div>
+						<label for="telefone" class="required">Telefone</label></br>
+						<input type="phone" name="telefone" required/>
+					</div>
+					<div>
+						<label for="site" class="required">Site</label></br>
+						<input type="text" name="site" required/>
+					</div>
+				</div>
+				<div class="form-col2">	
+					<div>
+						<label for="email" class="required">Email</label></br>
+						<input type="email" name="email" required/>
+					</div>
+					<div>
+						<label for="empresa">Empresa</label></br>
+						<input type="text" name="empresa" />
+					</div>
+					<div>
+						<label for="investi" class="required">Investimento mensal</label></br>
+						<select required>
+							<option value="6.000">R$ 6.000 a R$ 10.000</option>
+							<option value="11.000">R$ 11.000 a R$ 15.000</option>
+							<option value="16.000">R$ 16.000 a R$ 20.000</option>
+						</select>
+					</div>
+				</div>	
+				
+				<h3>Estou interessado em:</h3>
+				<div class="form-col3">
+					<input type="checkbox" name="interesse" value="Consultoria" /><label>Consultoria</label>
+					</br>
+					<input type="checkbox" name="interesse" value="Auditoria" /><label>
+					Auditoria de SEO</label>
+					</br>
+					<input type="checkbox" name="interesse" value="Link Bulding" /><label>Link Building</label>
+					</br>
+					<input type="checkbox" name="interesse" value="Content Marketing" /><label>Content Marketing</label>
+					</br>
+					<input type="checkbox" name="interesse" value="Assessoria de imprensa" /><label>Assessoria de Imprensa</label>
+					</br>
+				</div>	
+				<div class="form-col4">	
+					<input type="checkbox" name="interesse" value="Otimização de conversão" /><label>Otimização de Conversão</label>
+					</br>
+					<input type="checkbox" name="interesse" value="UX design" /><label>UX Deign</label>
+					</br>
+					<input type="checkbox" name="interesse" value="Criação de site" /><label>Criação de Site</label>
+					</br>
+				</div>
+
+				<h3>Descrição do seu projeto:</h3>
+				<textarea rows="10" cols="90"></textarea></br>
+				<input type="submit" value="ENVIAR" />
+			</form>
+			<!--fim formulário-->
+		</div>
+	</section>
+	<!--fim orçamento-->
+
+	<!--início rodapé-->
+	<footer class="rodape">
+		<div class="container-rodape container">
+			
+			<div class="col1">
+				<h4>SOBRE NÓS</h4>
+				<ul>
+					<li><a href="#quemsomos">Quem Somos</a></li>
+					<li><a href="#">Cases e Clientes</a></li>
+					<li><a href="#">Pesquisas</a></li>
+					<li><a href="#">Newsroom</a></li>
+					<li><a href="#">Imprensa</a></li>
+					<li><a href="#orcamento">Contato</a></li>
+				</ul>
+			</div>
+			<div class="col2">
+				<h4>SERVIÇOS</h4>
+				<ul>
+					<li><a href="#servicos">SEO</a></li>
+					<li><a href="#servicos">Link Building</a></li>
+					<li><a href="#servicos">E-commerce</a></li>
+					<li><a href="#servicos">Consultoria SEO</a></li>
+				</ul>
+
+			</div>
+			<div class="col3">
+				<h4>EDUCACIONAL</h4>
+				<ul>
+					<li><a href="#">SEODay</a></li>
+					<li><a href="#">Cursos In-company</a></li>
+					<li><a href="#">Arquivos</a></li>
+				</ul>
+			</div>
+			<div class="col4">
+				<p>Av. Angélica, 2.220 5° andar</p>
+				<p>01228-200 São Paulo - SP</p>
+				<p>(11) 3666-8395</p>
+				</br>
+				<p><a href="#orcamento">Entre em contato conosco</a></p>
+				<p><a href="#">Trabalhe conosco</a></p>
+			</div>
+			
+		</div>
+		<div class="rodape-bottom container">
+				<div class="roda-img" id="top-logo">
+				<a href="#"><img src="imagens/conversion-rodape.png" alt="Logo Conversion"></a>
+				</div>
+				<div class="roda-small">
+				<small>Conversion © 2015 - Direitos reservados - <u><a href="#">Politica de Privacidade</a></u></small>
+				</div>
+				<div class="icons"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+		</div>		
+	</footer>
+	<!--Fim rodapé-->
+</body>
+</html>
